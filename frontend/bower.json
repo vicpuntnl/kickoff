@@ -1,0 +1,39 @@
+{
+  "name": "base",
+  "version": "0.0.1",
+  "authors": [
+    "redhotminute.com"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "inuit-defaults": "latest",
+    "inuit-functions": "latest",
+    "inuit-mixins": "latest",
+    "inuit-box-sizing": "latest",
+    "inuit-normalize": "latest",
+    "inuit-page": "latest",
+    "inuit-headings-trumps": "latest",
+    "inuit-spacing": "latest",
+    "inuit-spacing-responsive": "latest",
+    "inuit-responsive-tools": "latest",
+    "inuit-responsive-settings": "latest",
+    "inuit-widths": "latest",
+    "inuit-widths-responsive": "latest",
+    "inuit-tools-widths": "latest",
+    "inuit-layout": "latest",
+    "inuit-layout-whitespace-fix": "latest",
+    "inuit-pack": "latest",
+    "inuit-lists": "latest",
+    "inuit-list-block": "latest",
+    "inuit-list-bare": "latest",
+    "inuit-list-inline": "latest",
+    "inuit-images": "latest",
+    "inuit-clearfix": "latest",
+    "inuit-print": "latest",
+    "jquery": "latest",
+    "velocity": "latest",
+    "almond": "0.3.1"
+  },
+  "dependencies": {
+  }
+}
