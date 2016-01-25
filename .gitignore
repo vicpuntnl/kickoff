@@ -1,4 +1,9 @@
+# Ignore everything
 node_modules
 frontend/bower_components
 frontend/dist/*
 frontend/styleguide/*
+
+
+# But not these files...
+!README.MD
