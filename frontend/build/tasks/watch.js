@@ -84,6 +84,8 @@ function runWatch() {
         watchIconFont
     );
 
+    gulp.start('styleguide-copy');
+
 }
 
 gulp.task('watch', runWatch); 
