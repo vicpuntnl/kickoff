@@ -5,7 +5,8 @@ gulp.task('build',
         'scss',
 		'js',
 		'font',
-		'img',
-		'styleguide'
-	]
+		'img'
+	], function() {
+        gulp.start('styleguide-copy');
+    }
 );
