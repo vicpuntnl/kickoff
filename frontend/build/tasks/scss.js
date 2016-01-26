@@ -20,8 +20,8 @@ function runScss(min, destination) {
 
 console.log(global.getDest('scss'))
 
-    var srcName = 'style',
-        scssSrc = global.getSrc('scss') + '/*.scss',
+    var srcName = '*.scss',
+        scssSrc = global.getSrc('scss') + '/' + srcName,
         autoPrefixCfg = {
             browsers: [
                 'IE >= 8',
