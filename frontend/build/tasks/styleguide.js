@@ -41,4 +41,4 @@ function copyFonts(){
  }
 
 
- gulp.task('styleguide', copyFiles);
+ gulp.task('styleguide-copy', copyFiles);
