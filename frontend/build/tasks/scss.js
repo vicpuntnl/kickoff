@@ -18,8 +18,6 @@ var gulp = require('gulp'),
 function runScss(min, destination) {
     'use strict';
 
-console.log(global.getDest('scss'))
-
     var srcName = '*.scss',
         scssSrc = global.getSrc('scss') + '/' + srcName,
         autoPrefixCfg = {
