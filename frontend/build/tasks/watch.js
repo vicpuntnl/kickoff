@@ -84,8 +84,15 @@ function runWatch() {
         watchIconFont
     );
 
-    gulp.start('styleguide-copy');
+
+    /**
+     * Watch all dist files for styleguide update
+     *
+     * Also see styleguide.js task
+     */
+    gulp.start('styleguide:watch'); 
 
 }
+
 
 gulp.task('watch', runWatch); 
