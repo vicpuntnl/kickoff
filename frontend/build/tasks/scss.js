@@ -74,9 +74,6 @@ function runScssDev(outPath) {
 
 gulp.task(
     'scss',
-    [
-        'scss:dev'
-    ],
     runScssProd
 );
 
