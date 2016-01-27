@@ -46,5 +46,5 @@ function runMinJSBuild() {
         .pipe(gulp.dest(dest));
 }
 
-gulp.task('js:dev', [], runJSBuild);
-gulp.task('js', ['js:dev'], runMinJSBuild);
+gulp.task('js:dev', runJSBuild);
+gulp.task('js', runMinJSBuild);
