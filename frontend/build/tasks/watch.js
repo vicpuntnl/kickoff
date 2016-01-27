@@ -19,7 +19,7 @@ function runWatch() {
      * @function watchCss
      */
     function watchCss() {
-        gulp.start('scss');
+        gulp.start('scss:dev');
     }
 
      watch(
@@ -33,7 +33,7 @@ function runWatch() {
      * @function watchJs
      */
     function watchJs() { 
-        gulp.start('js');
+        gulp.start('js:dev');
     }
 
     watch(
