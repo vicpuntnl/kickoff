@@ -83,6 +83,5 @@ gulp.task(
 
 gulp.task(
     'scss:dev',
-    ['clean:scss'],
     runScssDev
 );
