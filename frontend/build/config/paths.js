@@ -5,9 +5,9 @@
 /**
  * Root paths
  */
-global.setRoot('dest',              'frontend/dist');
-global.setRoot('src',               'frontend/src');
-global.setRoot('styleguide',        'frontend/styleguide');
+global.setRoot('dest',              './frontend/dist');
+global.setRoot('src',               './frontend/src');
+global.setRoot('styleguide',        './frontend/styleguide');
 
 /**
  * Destination paths
