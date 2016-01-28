@@ -80,7 +80,7 @@ function runWatch() {
     }
 
     watch(
-        global.getSrc('icon'),
+        global.getSrc('icons') + '/*.svg',
         watchIconFont
     );
 
