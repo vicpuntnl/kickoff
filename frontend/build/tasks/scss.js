@@ -72,13 +72,7 @@ function runScssDev(outPath) {
 
 
 
-gulp.task(
-    'scss',
-    runScssProd
-);
 
+gulp.task('scss', ['scss:dev'], runScssProd);
 
-gulp.task(
-    'scss:dev',
-    runScssDev
-);
+gulp.task('scss:dev', runScssDev);
