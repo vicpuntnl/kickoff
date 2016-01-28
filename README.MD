@@ -25,10 +25,10 @@ npm install
 bower install
 ```
 
-## Optional: in '/frontend/styleguide' folder, install patternlab
+## Optional: in '/styleguide' folder, install patternlab
 ```
 https://github.com/pattern-lab/patternlab-node
 ```
-The 'frontend/build/tasks/styleguide.js' automatically copies the '/dist' files to Patternlab.
+The 'build/tasks/styleguide.js' automatically copies the '/dist' files to the styleguide folder.
 
 Note: Patternlab has it's own gulp file. The generation of the styleguide is stand-alone.
