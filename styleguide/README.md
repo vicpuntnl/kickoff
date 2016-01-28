@@ -5,9 +5,9 @@ https://github.com/pattern-lab/patternlab-node
 ```
 
 
-## We need to add one line of code to the gulpfile
-The styleguide build task copies the css files directly to the /public/css/ in patternlab.
-Patternlab does not listen to this update so we need to add an extra watch folder.
+## We need to add some code to the gulpfile
+The styleguide.js build task copies the css files to the /source/**/ in patternlab.
+Patternlab does not listen to this update so we need to add an extra watch task (+ add an css copy task).
 
 In the gulpfile.js, add:
 
@@ -15,10 +15,23 @@ In the gulpfile.js, add:
 //server and watch tasks
 gulp.task('connect', ['lab'], function(){
   ...
+
+
+// begin addition
+  gulp.task('cp:cssRhm', function () {
+      return gulp.src('./source/css/*.css')
+        .pipe(gulp.dest('./public/css'))
+        .pipe(browserSync.stream());
+  })
+
   gulp.watch([
-    './public/css/*.css', /* <-- add this line */
-    ...
-  });
+    './source/**/*',
+    ],
+    ['assets', 'cp:cssRhm'], function () {
+        browserSync.reload();
+    });
+// end addition
+
 
 })
 ```
