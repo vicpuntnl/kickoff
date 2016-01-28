@@ -15,8 +15,8 @@ define([], function requireConfig() {
             /**
              * 3rd party scripts
              */
-            'jquery':           '../../bower_components/jquery/dist/jquery',
-            'matchMedia':       '../../bower_components/matchMedia/matchMedia',
+            'jquery':           '../vendor/jquery/dist/jquery',
+            'matchMedia':       '../vendor/matchMedia/matchMedia',
 
             /**
              * Modules

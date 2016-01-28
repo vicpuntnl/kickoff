@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "author": "",
   "license": "ISC",
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-uglify": "^1.5.1"
+  },
   "dependencies": {
     "del": "latest",
     "gulp": "latest",

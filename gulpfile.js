@@ -2,6 +2,6 @@
 
 var requireDir = require('require-dir');
 
-requireDir('frontend/build/config');
+requireDir('build/config');
 
-requireDir('frontend/build/tasks'); 
+requireDir('build/tasks'); 

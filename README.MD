@@ -30,6 +30,6 @@ bower install
 ```
 https://github.com/pattern-lab/patternlab-node
 ```
-The 'frontend/build/tasks/styleguide.js' automatically copies the '/frontend/dist' files to Patternlab.
+The 'frontend/build/tasks/styleguide.js' automatically copies the '/dist' files to Patternlab.
 
 Note: Patternlab has it's own gulp file. The generation of the styleguide is stand-alone.

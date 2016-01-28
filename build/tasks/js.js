@@ -1,12 +1,12 @@
 var gulp = require('gulp'),
     rjs = require('requirejs'),
-    //uglify = require('gulp-uglify'),
+    uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
     dest = global.getDest('js'),
     outputFile =  dest + '/main.js',
     rjsConfig = {
         baseUrl: global.getSrc('js'),
-        name: '../../bower_components/almond/almond',
+        name: '../vendor/almond/almond',
         include: ['bootstrap'],
         mainConfigFile: global.getSrc('rjs-config'),
         insertRequire: ['bootstrap'],
@@ -35,11 +35,11 @@ function runMinJSBuild() {
     'use strict';
 
     return gulp.src(outputFile)
-        //.pipe(uglify({
-        //    compress: {
-        //        'drop_console': true
-        //    }
-        //}))
+        .pipe(uglify({
+            compress: {
+                'drop_console': true
+            }
+        }))
         .pipe(rename({
             suffix: '.min'
         }))

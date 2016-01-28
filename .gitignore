@@ -1,8 +1,8 @@
 # Ignore everything
 node_modules
-frontend/bower_components
-frontend/dist/*
-frontend/styleguide/*
+src/vendor
+dist/*
+styleguide/*
 
 
 # But not these files...
