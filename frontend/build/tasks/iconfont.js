@@ -22,7 +22,7 @@ var gulp = require('gulp'),
                     path: template, // The template path
                     fontName: iconfontName, // The name of the generated font family (required)
                     fontPath: dest, // Directory of font files relative to generated (S)CSS file (optional, defaults to ./)
-                    targetPath: '../../../src/icons/_generated.icons.scss' // The path where the (S)CSS file should be saved, relative to the path used in gulp.dest()
+                    targetPath: generatedScssInclude // The path where the (S)CSS file should be saved, relative to the path used in gulp.dest()
                 })
             ) 
             .pipe(
