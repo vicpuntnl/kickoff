@@ -20,9 +20,8 @@ Base folder for styleguide (patternlab). Also see styleguide task in 'build/task
 npm install
 ```
 
-## In '/frontend' folder, install bower_components
+## get dependancies
 ```
-cd frontend
 bower install
 ```
 
