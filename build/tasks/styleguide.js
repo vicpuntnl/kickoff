@@ -4,7 +4,6 @@
 var gulp = require('gulp'),
     watch = require('gulp-watch'),
     watchAll = '/**/*',
-    styleguidePathPublic = global.getRoot('styleguide') + '/public', // path to public folder of patternlab
     styleguidePathSrc = global.getRoot('styleguide') + '/source'; // path to source folder of patternlab
 
 
@@ -18,7 +17,7 @@ function copyJs() {
 
 function copyCss() {
     return gulp.src(global.getDest('scss') + watchAll)
-        .pipe(gulp.dest(styleguidePathPublic + '/css'));
+        .pipe(gulp.dest(styleguidePathSrc + '/css'));
 }
 
 function copyFonts(){
