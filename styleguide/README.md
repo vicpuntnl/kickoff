@@ -17,7 +17,7 @@ gulp.task('connect', ['lab'], function(){
   ...
 
 
-
+// begin addition
   gulp.task('cp:cssRhm', function () {
       return gulp.src('./source/css/*.css')
         .pipe(gulp.dest('./public/css'))
@@ -30,7 +30,7 @@ gulp.task('connect', ['lab'], function(){
     ['assets', 'cp:cssRhm'], function () {
         browserSync.reload();
     });
-
+// end addition
 
 
 })
