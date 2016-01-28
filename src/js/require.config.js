@@ -10,7 +10,7 @@ define([], function requireConfig() {
     */
     require.config({
         deps: [],
-        baseUrl: './Frontend/src/js',
+        baseUrl: './src/js',
         paths: { // Reference aliases & Paths
             /**
              * 3rd party scripts
