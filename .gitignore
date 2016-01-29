@@ -3,7 +3,8 @@ node_modules
 src/vendor
 dist/*
 styleguide/*
-
+bower_components
+prepros.cfg
 
 # But not these files...
 !README.MD

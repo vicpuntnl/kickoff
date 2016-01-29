@@ -1,0 +1,15 @@
+/*
+ * Generate color classes, like: .u-text-color-{color}--{variation}
+ */
+@each $name, $color in $color-palette {
+
+	@each $key, $val in $color {
+		.u-text-color-#{$name}--#{$key} {
+			color: $val;
+		}
+		.u-bg-color-#{$name}--#{$key} {
+			background-color: $val;
+		}
+	}
+	
+}

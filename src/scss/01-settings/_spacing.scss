@@ -1,0 +1,15 @@
+/**
+ * Platform base spacing unit
+ * Used as a relative value to calculate all sizes: margins, paddings, fonts, etc.
+ * The base spacing unit is you base margin, padding and line-height. 
+ */
+$base-spacing-unit: 24px;
+
+
+/**
+ * Extra variations to use in your sass
+ */
+$quadruple-spacing-unit: round($base-spacing-unit * 4);
+$double-spacing-unit: round($base-spacing-unit * 2);
+$half-spacing-unit: round($base-spacing-unit / 2);
+$quarter-spacing-unit: round($base-spacing-unit / 4);

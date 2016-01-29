@@ -1,0 +1,23 @@
+/**
+ * Mixins to output containers and widths
+ *
+ * Uses the $containers variable defined in '/01-settings/_vars.scss'
+ * and calls these in '/05-objects/_layout.scss'
+ */
+@mixin container-setup($map) {
+    @each $profile, $width in $map {
+        .#{$profile} {
+			position: relative;
+            max-width: $width;
+            width: 100%;
+            margin: 0 auto;
+			padding-left: $inuit-base-spacing-unit;
+			padding-right: $inuit-base-spacing-unit;
+			@include media-query('palm') {
+				padding-left: halve($inuit-base-spacing-unit);
+				padding-right: halve($inuit-base-spacing-unit);
+			}
+        }
+    }
+}
+

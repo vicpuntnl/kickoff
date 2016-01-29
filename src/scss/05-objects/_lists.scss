@@ -1,0 +1,14 @@
+﻿/*
+ * Reset for lists
+ */
+.o-list-base {
+    margin: 0;
+    padding: 0;
+    @include inuit-font-size($inuit-heading-size-4);
+
+    li {
+        list-style-type: none;
+        margin-bottom: $half-spacing-unit;
+    }
+
+} 

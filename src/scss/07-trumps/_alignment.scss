@@ -1,0 +1,18 @@
+/**
+ * Alignment, vertical and horizontal
+ */
+%u-vertical-align--center,
+.u-vertical-align--center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+/**
+ * Text alignment
+ */
+.u-text-align--right { text-align: right }
+.u-text-align--left { text-align: left }
+.u-text-align--center { text-align: center }
