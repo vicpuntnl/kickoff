@@ -1,2 +1,91 @@
-/* Put scss here */
-body {background-color:red;}
+/*
+ * This project is based on ITCSS 
+ * http://itcss.io/
+ *
+ 
+    ITCSS STRUCTURE:
+    ----------
+    01-Settings: Global variables, config switches.
+    02-Tools: Default mixins and functions.
+    03-Generic: Ground-zero styles (Normalize.css, resets, box-sizing).
+    04-Base: Unclassed HTML elements (type selectors).
+    05-Objects: Cosmetic-free design patterns.
+    06-Components: Designed components, chunks of UI.
+    07-Trumps: Helpers and overrides.
+*/
+
+
+/* 01 - SETTINGS */
+// inuit partials
+@import "../vendor/inuit-defaults/settings.defaults";
+@import "../vendor/inuit-responsive-settings/settings.responsive";
+// custom partials
+@import "01-settings/animations.scss";
+@import "01-settings/colors";
+@import "01-settings/typography";
+@import "01-settings/layout";
+@import "01-settings/spacing";
+@import "01-settings/inuit";
+
+
+/* 02 - FUNCTIONS */
+// inuit partials
+@import "../vendor/inuit-functions/tools.functions"; 
+@import "../vendor/inuit-mixins/tools.mixins"; 
+@import "../vendor/inuit-tools-widths/tools.widths"; 
+@import "../vendor/inuit-responsive-tools/tools.responsive"; 
+// custom partials
+@import "02-tools/container-setup";
+
+
+/* 03 - GENERIC */
+// inuit partials
+@import "../vendor/inuit-normalize/generic.normalize";
+@import "../vendor/inuit-box-sizing/generic.box-sizing";
+// custom partials
+@import "03-generic/generic"; 
+
+
+/* 04 - BASE */
+// inuit partials
+@import "../vendor/inuit-page/base.page"; 
+@import "../vendor/inuit-images/base.images"; 
+@import "../vendor/inuit-lists/base.lists"; 
+// custom partials
+@import "04-base/typography";
+
+
+/* 05 - OBJECTS */
+// inuit partials
+@import "../vendor/inuit-buttons/objects.buttons"; 
+@import "../vendor/inuit-layout/objects.layout"; 
+@import "../vendor/inuit-layout-whitespace-fix/objects.layout-whitespace-fix";
+@import "../vendor/inuit-list-bare/objects.list-bare"; 
+@import "../vendor/inuit-list-block/objects.list-block"; 
+@import "../vendor/inuit-list-inline/objects.list-inline"; 
+@import "../vendor/inuit-pack/objects.pack"; 
+// custom partials
+@import "05-objects/layout";
+@import "05-objects/lists";
+
+
+/* 06 - COMPONENTS */
+// plugin css
+// custom partials
+
+
+
+/* 07 - TRUMPS */
+// inuit partials
+@import "../vendor/inuit-clearfix/trumps.clearfix"; 
+@import "../vendor/inuit-headings-trumps/trumps.headings"; 
+@import "../vendor/inuit-widths/trumps.widths"; 
+@import "../vendor/inuit-widths-responsive/trumps.widths-responsive"; 
+@import "../vendor/inuit-spacing/trumps.spacing"; 
+@import "../vendor/inuit-spacing-responsive/trumps.spacing-responsive"; 
+@import "../vendor/inuit-print/trumps.print";
+// custom partials
+@import "07-trumps/alignment";
+@import "07-trumps/colors";
+@import "07-trumps/text";
+@import "07-trumps/visibility";

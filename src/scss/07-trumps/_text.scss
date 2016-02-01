@@ -1,0 +1,14 @@
+/**
+ * Text weights
+ */
+.u-text-weight--light { font-weight: 100; }
+.u-text-weight--normal { font-weight: 300; }
+.u-text-weight--medium { font-weight: 500; }
+.u-text-weight--bold { font-weight: 900; }
+
+
+/**
+ * Text fonts
+ */
+.u-text-font--base { font-family: $base-face }
+.u-text-font--brand { font-family: $brand-face }

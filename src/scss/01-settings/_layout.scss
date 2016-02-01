@@ -1,0 +1,12 @@
+﻿/*
+ * Spacing containers used for maximum width of your site panels 
+ * Usage; classname : value in em
+ *
+ * 05-objects/layout < containers are generated here
+ */
+
+
+$containers: (
+    'o-container--l': 71.429em, // 1000px
+    'o-container--m': 44.286em // 620px
+);

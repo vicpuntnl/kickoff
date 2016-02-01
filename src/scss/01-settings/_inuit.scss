@@ -1,0 +1,232 @@
+// /*------------------------------------*\
+//    #SETTINGS
+// \*------------------------------------*/
+
+// High-level base settings.
+$inuit-base-font-size:          14px;
+$inuit-base-line-height:        $base-spacing-unit;
+
+$inuit-base-text-color:         colors(black);
+$inuit-base-background-color:   colors(white);
+
+$base-radius: 5px;
+
+
+// Namespace.
+// Would you like inuitcss’ classes to be prepended with a namespace? If so,
+// define it here.
+$inuit-namespace:               null;
+
+// These variables are framework variables, sourced from variables defined
+// above. Feel free to use these variables throughout your project, but do not
+// modify or reassign them.
+$inuit-base-spacing-unit:       $base-spacing-unit;
+
+
+// If we have included this file, set a variable to tell the rest of the
+// framework that global `box-sizing: border-box` has been set.
+$inuit-global-border-box:       true;
+
+
+
+/*------------------------------------*\
+    #HEADINGS
+\*------------------------------------*/
+
+/**
+ * Headings 1–6.
+ */
+
+// Predefine the variables below in order to alter and enable specific features.
+$inuit-heading-size-1:  $inuit-base-font-size * 3;
+$inuit-heading-size-2:  $inuit-base-font-size * 2;
+$inuit-heading-size-3:  $inuit-base-font-size * 1.5;
+$inuit-heading-size-4:  $inuit-base-font-size * 1.25;
+$inuit-heading-size-5:  $inuit-base-font-size * 1.25;
+$inuit-heading-size-6:  $inuit-base-font-size * 1.25;
+
+
+
+
+///*------------------------------------*\
+//    #SETTINGS-RESPONSIVE
+//\*------------------------------------*/
+
+// Hold our breakpoint aliases and conditions in a list.
+//
+// These can be invoked later on via the `media-query()` mixin found in
+// `_tools.responsive`.
+
+$breakpoints: (
+    "palm"          "screen and (max-width: 44.9375em)",
+    "lap"           "screen and (min-width: 45em) and (max-width: 63.9375em)",
+    "lap-and-up"    "screen and (min-width: 45em)",
+    "portable"      "screen and (max-width: 63.9375em)",
+    "desk"          "screen and (min-width: 64em)",
+    "retina"        "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)"
+) !default;
+// If we have included this file, set a variable to tell the rest of the
+// framework that we have some responsive settings.
+$inuit-responsive-settings: true;
+
+
+
+
+/*------------------------------------*\
+    #LAYOUT
+\*------------------------------------*/
+
+/**
+ * The inuitcss layout system uses `box-sizing: border-box;` and
+ * `display: inline-block;` to create an extremely powerful, flexible
+ * alternative to the traditional grid system. Combine the layout items with
+ * the widths found in `trumps.widths`.
+ */
+
+// Predefine the variables below in order to alter and enable specific features.
+$inuit-layout-namespace:        $inuit-namespace;
+
+$inuit-layout-gutter:           $inuit-base-spacing-unit;
+$inuit-layout-gutter--tiny:       quarter($inuit-layout-gutter);
+$inuit-layout-gutter--small:        halve($inuit-layout-gutter);
+$inuit-layout-gutter--large:       double($inuit-layout-gutter);
+$inuit-layout-gutter--huge:     quadruple($inuit-layout-gutter);
+
+$inuit-enable-layout--tiny:     false;
+$inuit-enable-layout--small:    false;
+$inuit-enable-layout--large:    false;
+$inuit-enable-layout--huge:     false;
+$inuit-enable-layout--flush:    false;
+$inuit-enable-layout--rev:      false;
+$inuit-enable-layout--middle:   false;
+$inuit-enable-layout--bottom:   false;
+$inuit-enable-layout--right:    false;
+$inuit-enable-layout--center:   false;
+$inuit-enable-layout--auto:     false;
+
+
+
+
+/*------------------------------------*\
+    #WIDTHS
+\*------------------------------------*/
+
+/**
+ * A series of width helper classes that you can use to size things like grid
+ * systems. Classes can take a fraction-like format (e.g. `.2/3`) or a spoken-
+ * word format (e.g. `two-thirds`). Toggle formats by overriding the
+ * `$inuit-use-fractions` variable defined below.
+ */
+
+// Predefine the variables below in order to alter and enable specific features.
+$inuit-widths-namespace: $inuit-namespace;
+$inuit-use-fractions:    true;
+
+
+
+
+/*------------------------------------*\
+    #SPACING
+\*------------------------------------*/
+/**
+ * Comma delimited list to semantically mark up lists of tags, etc.
+ *
+ * N.B. This component requires that you remove the whitespace between LIs.
+ *      The simplest (and valid) way to achieve this is by omitting the
+ *      closing `</li>` tag.
+ */
+$inuit-enable-list-inline--delimited: true;
+
+
+
+/*------------------------------------*\
+    #SPACING
+\*------------------------------------*/
+
+/**
+ * Margin and padding helper classes. Use these to tweak layout on a micro
+ * level.
+ *
+ * `.(m|p)(t|r|b|l|h|v)(-|+|0) {}` = margin/padding top/right/bottom/left/horizontal/vertical less/more/none
+ */
+
+// Predefine the variables below in order to alter and enable specific features.
+$inuit-spacing-namespace:               $inuit-namespace;
+
+$inuit-margin:                          $inuit-base-spacing-unit;
+$inuit-padding:                         $inuit-base-spacing-unit;
+
+$inuit-enable-margins:                  true;
+$inuit-enable-margins--tiny:            true;
+$inuit-enable-margins--small:           true;
+$inuit-enable-margins--large:           true;
+$inuit-enable-margins--huge:            false;
+
+$inuit-enable-margins--negative:        false;
+$inuit-enable-margins--negative-tiny:   false;
+$inuit-enable-margins--negative-small:  false;
+$inuit-enable-margins--negative-large:  false;
+$inuit-enable-margins--negative-huge:   false;
+
+$inuit-enable-margins--none:            true;
+
+$inuit-enable-paddings:                 true;
+$inuit-enable-paddings--tiny:           true;
+$inuit-enable-paddings--small:          true;
+$inuit-enable-paddings--large:          true;
+$inuit-enable-paddings--huge:           false;
+
+$inuit-enable-paddings--none:           true;
+
+
+
+
+/*------------------------------------*\
+    #SPACING-RESPONSIVE
+\*------------------------------------*/
+
+/**
+ * Margin and padding helper classes. Use these to tweak layout on a micro
+ * level.
+ *
+ * `.(m|p)(t|r|b|l|h|v)(-|+|0) {}` = margin/padding top/right/bottom/left/horizontal/vertical less/more/none
+ */
+
+// Predefine the variables below in order to alter and enable specific features.
+$inuit-enable-responsive-margins:                   true;
+$inuit-enable-responsive-margins--tiny:             true;
+$inuit-enable-responsive-margins--small:            true;
+$inuit-enable-responsive-margins--large:            true;
+$inuit-enable-responsive-margins--huge:             false;
+
+$inuit-enable-responsive-margins--negative:         false;
+$inuit-enable-responsive-margins--negative-tiny:    false;
+$inuit-enable-responsive-margins--negative-small:   false;
+$inuit-enable-responsive-margins--negative-large:   false;
+$inuit-enable-responsive-margins--negative-huge:    false;
+
+$inuit-enable-responsive-margins--none:             true;
+
+$inuit-enable-responsive-paddings:                  true;
+$inuit-enable-responsive-paddings--tiny:            true;
+$inuit-enable-responsive-paddings--small:           true;
+$inuit-enable-responsive-paddings--large:           true;
+$inuit-enable-responsive-paddings--huge:            false;
+
+$inuit-enable-responsive-paddings--none:            true;
+
+
+
+
+// Needed to fix inuitcss mixin
+//$inuit-generate-spacing-alias: null;
+
+
+
+
+/* *\
+    #BUTTONS
+\* */
+$inuit-enable-btn--small:   true;
+$inuit-enable-btn--large:   true;
+$inuit-enable-btn--full:    true;

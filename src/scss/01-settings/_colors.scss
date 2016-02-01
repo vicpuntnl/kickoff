@@ -1,0 +1,30 @@
+/*
+ * Color mapping. This is used for requesting and generating colors.
+ *
+ * 02-tools/color-setup > function to use for getting color for usage in your partials
+ * 07-trumps/colors > here we will generate classes for all colors in mapping to use in your html
+ *
+ * Resource used: "Friendlier color names sass maps" http://erskinedesign.com/blog/friendlier-colour-names-sass-maps/
+ */
+
+
+$color-palette: (
+    purple: (
+        base:   rgb(42,40,80),
+        light:  rgb(51,46,140),
+        dark:   rgb(40,38,65)
+    ),
+    grey: (
+        base:  #eeeeee
+    )
+);
+
+
+
+/*
+ * Function for getting retreiving colors 
+ *
+ */
+@function colors($color) {
+    @return map-get($color-palette, $color);
+}
