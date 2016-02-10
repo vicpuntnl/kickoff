@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     outputFile =  dest + '/main.js',
     rjsConfig = {
         baseUrl: global.getSrc('js'),
-        name: '../vendor/almond/almond',
+        name: global.getSrc('src') + '/vendor/almond/almond',
         include: ['bootstrap'],
         mainConfigFile: global.getSrc('rjs-config'),
         insertRequire: ['bootstrap'],
@@ -46,5 +46,10 @@ function runMinJSBuild() {
         .pipe(gulp.dest(dest));
 }
 
+
+
+gulp.task('js', ['js:dev', 'js:min']);
+
 gulp.task('js:dev', runJSBuild);
-gulp.task('js', ['js:dev'], runMinJSBuild);
+
+gulp.task('js:min', runMinJSBuild);
