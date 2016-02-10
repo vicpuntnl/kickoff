@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     outputFile =  dest + '/main.js',
     rjsConfig = {
         baseUrl: global.getSrc('js'),
-        name: global.getSrc('src') + '/vendor/almond/almond',
+        name: vendor/almond/almond',
         include: ['bootstrap'],
         mainConfigFile: global.getSrc('rjs-config'),
         insertRequire: ['bootstrap'],
