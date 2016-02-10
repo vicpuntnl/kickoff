@@ -2,11 +2,10 @@ var gulp = require('gulp');
 
 gulp.task('build',
 	[
-        'scss',
-	'js',
+        'scss:min',
+	'js:min',
 	'font',
 	'img',
-        'build:dev'
 	]
 );
 
