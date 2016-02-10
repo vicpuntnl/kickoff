@@ -72,7 +72,8 @@ function runScssDev(outPath) {
 
 
 
+gulp.task('scss', ['scss:dev', 'scss:min']);
 
-gulp.task('scss', ['scss:dev'], runScssProd);
+gulp.task('scss:min', runScssProd);
 
 gulp.task('scss:dev', runScssDev);
