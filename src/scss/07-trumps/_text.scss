@@ -12,3 +12,31 @@
  */
 .u-text-font--base { font-family: $base-face }
 .u-text-font--brand { font-family: $brand-face }
+
+
+/**
+ * Font sizes
+ */
+.alpha {
+    @include inuit-font-size($inuit-heading-size-1,$inuit-heading-size-1-lineheight);
+}
+
+.beta {
+    @include inuit-font-size($inuit-heading-size-2,$inuit-heading-size-2-lineheight);
+}
+
+.gamma {
+    @include inuit-font-size($inuit-heading-size-3,$inuit-heading-size-3-lineheight);
+}
+
+.delta {
+    @include inuit-font-size($inuit-heading-size-4,$inuit-heading-size-4-lineheight);
+}
+
+.epsilon {
+    @include inuit-font-size($inuit-heading-size-5,$inuit-heading-size-5-lineheight);
+}
+
+.zeta {
+    @include inuit-font-size($inuit-heading-size-6,$inuit-heading-size-6-lineheight);
+}

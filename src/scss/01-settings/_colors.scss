@@ -25,6 +25,6 @@ $color-palette: (
  * Function for getting retreiving colors 
  *
  */
-@function colors($color) {
+@function colors($color, $tone: 'base') {
     @return map-get($color-palette, $color);
 }

@@ -3,7 +3,7 @@
 // \*------------------------------------*/
 
 // High-level base settings.
-$inuit-base-font-size:          14px;
+$inuit-base-font-size:          16px;
 $inuit-base-line-height:        $base-spacing-unit;
 
 $inuit-base-text-color:         colors(black);
@@ -37,13 +37,25 @@ $inuit-global-border-box:       true;
  * Headings 1–6.
  */
 
-// Predefine the variables below in order to alter and enable specific features.
-$inuit-heading-size-1:  $inuit-base-font-size * 3;
-$inuit-heading-size-2:  $inuit-base-font-size * 2;
-$inuit-heading-size-3:  $inuit-base-font-size * 1.5;
-$inuit-heading-size-4:  $inuit-base-font-size * 1.25;
-$inuit-heading-size-5:  $inuit-base-font-size * 1.25;
-$inuit-heading-size-6:  $inuit-base-font-size * 1.25;
+
+$inuit-heading-size-1:  48px;
+$inuit-heading-size-1-lineheight:  48px;
+
+$inuit-heading-size-2:  36px;
+$inuit-heading-size-2-lineheight:  36px;
+
+$inuit-heading-size-3:  30px;
+$inuit-heading-size-3-lineheight:  30px;
+
+$inuit-heading-size-4:  24px;
+$inuit-heading-size-4-lineheight:  24px;
+
+$inuit-heading-size-5:  18px;
+$inuit-heading-size-5-lineheight:  18px;
+
+$inuit-heading-size-6:  12px;
+$inuit-heading-size-6-lineheight:  12px;
+
 
 
 

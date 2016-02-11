@@ -1,0 +1,20 @@
+/**
+ * Mixin fontface
+ * enable a font, based on the file-name without extension, the path to the files location and the corresponding weight. 
+ */
+
+@mixin fontface($name,$path,$weight,$woff2) {
+
+  @font-face {
+    font-family: $name;
+    src: url('#{$path}.eot'); /* IE9 Compat Modes */
+    src: url('#{$path}.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         //url('#{$path}.woff2') format('woff2'), /* Super Modern Browsers */
+         url('#{$path}.woff') format('woff'), /* Pretty Modern Browsers */
+         url('#{$path}.ttf')  format('truetype'); /* Safari, Android, iOS */
+
+    font-weight: $weight;
+    font-style: normal;         
+  }
+
+}

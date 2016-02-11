@@ -3,4 +3,29 @@
  */
 * { box-sizing: border-box; }
 
+/* always shrink images to fit their parent*/
 img { max-width: 100%; }
+
+/* removes default border around fieldsets*/
+fieldset {
+    border:none;
+}
+
+/**
+ * Set the current breakpoint name
+ * in the font-family css attribute of the head element
+ *
+ * Used to determine what breakpoint we're currently on,
+ * easily accessible through JavaScript
+ */
+head {
+    font-family: 'desk';
+
+    @include media-query(palm) {
+        font-family: 'palm';
+    }
+
+    @include media-query(lap) {
+        font-family: 'lap';
+    }
+}

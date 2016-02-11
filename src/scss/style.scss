@@ -36,7 +36,8 @@
 @import "../vendor/inuit-responsive-tools/tools.responsive"; 
 // custom partials
 @import "02-tools/container-setup";
-
+@import "02-tools/font-face";
+@import "02-tools/icomoon";
 
 /* 03 - GENERIC */
 // inuit partials
@@ -44,6 +45,7 @@
 @import "../vendor/inuit-box-sizing/generic.box-sizing";
 // custom partials
 @import "03-generic/generic"; 
+@import "03-generic/button-reset"; 
 
 
 /* 04 - BASE */
@@ -78,7 +80,6 @@
 /* 07 - TRUMPS */
 // inuit partials
 @import "../vendor/inuit-clearfix/trumps.clearfix"; 
-@import "../vendor/inuit-headings-trumps/trumps.headings"; 
 @import "../vendor/inuit-widths/trumps.widths"; 
 @import "../vendor/inuit-widths-responsive/trumps.widths-responsive"; 
 @import "../vendor/inuit-spacing/trumps.spacing"; 

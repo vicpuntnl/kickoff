@@ -47,7 +47,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-small {
+small,
+.small {
     display: inline-block;
     @include inuit-font-size($inuit-heading-size-6, 1.45);
 }
